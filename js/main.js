@@ -437,6 +437,7 @@ $(document).on('ready', function () {
 
 	// 9. Page Loader : hide loader when all are loaded
 	contextWindow.on('load', function () {
+		setTimeout(typeWriter, 500);
 		$('#page-loader').addClass('p-hidden');
 		$('.section').addClass('anim');
 	});
@@ -449,6 +450,18 @@ $(document).on('ready', function () {
 		// shadowBall.posx.value = e.pageX;
 		// shadowBall.posy.value = e.pageY;
 	});
+
+	var i = 0;
+	var txt = '<Hi, I\'m a frontend developer!>'; /* The text */
+	var speed = 50; /* The speed/duration of the effect in milliseconds */
+
+	function typeWriter() {
+		if (i < txt.length) {
+			document.getElementById("typing-effect").innerHTML += txt.charAt(i);
+			i++;
+			setTimeout(typeWriter, speed);
+		}
+	}
 
 });
 
