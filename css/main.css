@@ -4590,8 +4590,8 @@ textarea {
     padding-top: 2rem; }
   .service-list .item {
     margin-bottom: 2rem; }
-  .service-list i {
-    font-size: 5rem;
+  .service-list .img {
+    font-size: 4.5rem;
   }
 
 .project-list {
