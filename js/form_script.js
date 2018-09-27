@@ -36,10 +36,10 @@
 						 * depending to your requirements
 						 */
 						url: settings.serverUrl,
-						type: settings.type,
+						// type: settings.type,
+						type: 'GET',
 						data: form_data,
 						dataType: 'json',
-
 						/* CALLBACK FOR SENDING EMAIL GOEAS HERE */
 						success: function (data) {
 							//Ajax connexion was a success, now handle response
@@ -68,7 +68,6 @@
 							settings.textFeedback.removeClass('invisible');
 							settings.textFeedback.html('Error when sending request.');
 							console.log('ajax error');
-
 						}
 						/* END EMAIL SENDING CALLBACK */
 					});

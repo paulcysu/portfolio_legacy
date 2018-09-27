@@ -35,11 +35,11 @@ function storeAddress($user_email){
     include('./mailchimp/MailChimp.php');
 
 	// IMPORTANT : grab an API Key from http://admin.mailchimp.com/account/api/ and replace YOUR_APIKEY_HERE by yours
-    $MailChimp = new MailChimp('YOUR_APIKEY_HERE');
+    $MailChimp = new MailChimp('37ebee0b3305127f467d1ee28b81e17a-us19');
 	
 	//  IMPORTANT : grab your List's Unique Id by going to http://admin.mailchimp.com/lists/ and replace YOUR_LISTID_HERE by yours
 	// Click the "settings" link for the list - the Unique Id is at the bottom of that page. 
-	$list_id = "YOUR_LISTID_HERE";
+	$list_id = "f43c128b4c";
 
     $m_response = array();
     
@@ -124,7 +124,7 @@ if (isset($_POST['submit_message'])) {
         // -- BELOW : EXAMPLE SEND YOU AN EMAIL CONTAINING THE MESSAGE (comment to disable it/ uncomment it to enable it)
         // Set the recipient email address.
         // IMPORTANT - FIXME: Update this to your desired email address (relative to your server domaine).
-        $recipient = "your@email.com";
+        $recipient = "su.paul.cy@gmail.com";
 
         // Set the email subject.
         $subject = "Need support message From ".$name;

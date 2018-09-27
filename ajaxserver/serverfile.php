@@ -1,4 +1,7 @@
 <?php
+
+// $_POST = json_decode(file_get_contents('php://input'), true);
+
 // Set the header response to JSON
 header('Content-type: application/json');
 
@@ -99,3 +102,4 @@ if (isset($_POST['submit_email'])) {
     echo json_encode($response);    
 } 
 
+?>
