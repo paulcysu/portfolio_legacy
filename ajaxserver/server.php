@@ -1,4 +1,5 @@
 <?php
+
 // Set the header response to JSON
 header('Content-type: application/json');
 
@@ -16,7 +17,6 @@ if (isset($_POST['submit_message'])) {
     $name = trim($_POST['name']);
     $product = trim($_POST['product']);
     $message = trim($_POST['message']);
-    
     
     $email = filter_var(@$_POST['email'], FILTER_SANITIZE_EMAIL );
     
@@ -178,3 +178,5 @@ if (isset($_POST['submit_email'])) {
     }
     */
 }
+
+?>
