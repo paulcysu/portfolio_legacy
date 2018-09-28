@@ -77,8 +77,6 @@ function storeAddress($user_email){
 	return $m_response;
 }
 
-
-
 /*
  *Handle Message From
  */

@@ -35,9 +35,9 @@
 						 * external URL such as:  url: 'http://www.example.com/avenir/ajaxserver/server.php'
 						 * depending to your requirements
 						 */
-						url: settings.serverUrl,
-						// type: settings.type,
-						type: 'GET',
+						url: '../php_mailer/mail_handler.php',
+						type: settings.type,
+						// type: 'GET',
 						data: form_data,
 						dataType: 'json',
 						/* CALLBACK FOR SENDING EMAIL GOEAS HERE */

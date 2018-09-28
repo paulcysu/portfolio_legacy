@@ -31,14 +31,14 @@ if(empty($message['message'])){
 };
 
 // sanitize subject
-$message['subject'] = filter_var($_POST['subject'], FILTER_SANITIZE_STRING);
+// $message['subject'] = filter_var($_POST['subject'], FILTER_SANITIZE_STRING);
 // if(empty($message['subject'])){
 //     $output['success'] = false;
 //     $output['messages'][] = 'missing message key';
 // };
 
 // sanitize phone
-$message['phone'] = preg_replace('/[^0-9]/', '', $_POST['phone_number']);
+// $message['phone'] = preg_replace('/[^0-9]/', '', $_POST['phone_number']);
 // if(empty($message['phone']) && count($message['phone']) >= 10 && count($message['phone']) <= 11){
 //     $output['success'] = false;
 //     $output['messages'][] = 'missing phone key';
