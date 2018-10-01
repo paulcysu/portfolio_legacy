@@ -3,12 +3,8 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
-  <!-- Page Title Here -->
   <title>Paul Su || Portfolio</title>
-
-  <!-- Meta -->
-  <!-- Page Description Here -->
-  <meta name="description" content="A beautiful and creative portfolio template. It is mobile friend (responsive) and comes with smooth animations">
+  <meta name="description" content="Paul Su || Frontend Web Developer Portfolio">
 
   <!-- Disable screen scaling-->
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0">
@@ -21,23 +17,12 @@
   <meta name="twitter:description" content="Description of the page">
   <meta name="twitter:image" content="/img/bg-default.jpg">
 
-  <!-- Facebook Meta -->
-  <meta property="og:url" content="your website url here">
-  <meta property="og:title" content="Page Title">
-  <meta property="og:description" content="Description of the page">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="/img/bg-default.jpg">
-  <meta property="og:image:secure_url" content="/img/bg-default.jpg">
-  <meta property="og:image:type" content="image/jpg">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-
-  <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
   <!-- Web fonts and Web Icons -->
   <link rel="stylesheet" href="./fonts/opensans/stylesheet.css">
   <link rel="stylesheet" href="./fonts/bebas/stylesheet.css">
   <link rel="stylesheet" href="./fonts/ionicons.min.css">
   <link rel="stylesheet" href="./fonts/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 
   <!-- Vendor CSS style -->
   <link rel="stylesheet" href="./css/pageloader.css">
@@ -58,9 +43,6 @@
 </head>
 
 <body id="menu" class="body-page">
-  <!--[if lt IE 8]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
 
   <!-- Page Loader : just comment these lines to remove it -->
   <div class="page-loader" id="page-loader">
@@ -91,10 +73,6 @@
       <span class="logo">
         <img class="light-logo" src="img/icons/ps.png" alt="Logo">
       </span>
-      <span class="text">
-        <span class="line">Paul Su</span>
-        <span class="line sub">Portfolio</span>
-      </span>
     </a>
     <!-- End of logo/brand -->
 
@@ -103,13 +81,33 @@
       <!-- Begin of top menu -->
       <nav class="navbar-topmenu">
         <!-- Begin of CTA Actions, & Icons menu -->
-        <!-- <ul class="navbar-nav navbar-nav-actions">
-				<li class="nav-item">
-					<a class="btn btn-outline-white btn-round" target="_blank" href="https://themeforest.net/user/mivfx/portfolio">
-						Buy Now
-					</a>
-				</li>
-			</ul> -->
+        <ul class="navbar-nav navbar-nav-actions">
+          <li class="nav-item">
+              <a class="btn btn-outline-white btn-round" href="/#about">
+                About
+              </a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-outline-white btn-round" href="/#projects">
+              Projects
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-outline-white btn-round" href="/#skills">
+              Skills
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-outline-white btn-round" target="_blank" href="https://docs.google.com/document/d/11JiaUi37BtIgDzxJw35v6FSNMDcIPAEd63AH_egrFfI/edit?usp=sharing">
+              Resume
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-outline-white btn-round" href="/#contact">
+              Contact
+            </a>
+          </li>
+			</ul>
         <!-- End of CTA & Icons menu -->
       </nav>
       <!-- End of top menu -->
@@ -126,10 +124,10 @@
             <a class="nav-link" href="./gallery.html">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./item.html">Resume</a>
+            <a class="nav-link" target="_blank" href="https://docs.google.com/document/d/11JiaUi37BtIgDzxJw35v6FSNMDcIPAEd63AH_egrFfI/edit?usp=sharing">Resume</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./demo.html">Contact</a>
+            <a class="nav-link" href="/#contact">Contact</a>
           </li>
         </ul>
       </nav>
@@ -144,11 +142,10 @@
   <!-- BEGIN OF page cover -->
   <div class="page-cover" id="parallax-cover">
     <!-- Cover Background -->
-    <div data-depth="0.2" class="cover-bg bg-img" data-image-src="img/mountains.jpg"></div>
+    <div data-depth="0.2" class="cover-bg bg-img" data-image-src="img/desk.jpg"></div>
 
     <!-- Transluscent mask as filter -->
-    <div class="cover-bg-mask bg-color" data-bgcolor="rgba(2, 3, 10, 0.7)"></div>
-
+    <div class="cover-bg-mask bg-color" data-bgcolor="rgba(2, 3, 10, 0.1)"></div>
 
   </div>
   <!--END OF page cover -->
@@ -157,8 +154,7 @@
   <main class="page-main page-fullpage main-anim" id="mainpage">
 
     <!-- Begin of home section -->
-    <div class="section section-home fullscreen-md fp-auto-height-responsive main-home section-centered"
-    data-section="home">
+    <div class="section section-home fullscreen-md fp-auto-height-responsive main-home section-centered" data-section="home">
       <!-- Begin of section wrapper -->
       <div class="section-wrapper fullwidth with-margin v-center">
         <!-- content -->
@@ -168,8 +164,7 @@
               <!-- title and description -->
               <div class="title-desc">
                 <h1 class="display-4 display-title home-title decor anim-1">Paul Su</h1>
-                <h4 class="anim-2">< Hi, I'm a front-end web developer ></h4>
-                <p class="anim-2">I am a horse</p>
+                <h4 class="anim-2" id="typing-effect"></h4>
               </div>
 
               <!-- Action button -->
@@ -223,11 +218,11 @@
               <!-- title and description -->
               <div class="title-desc">
                 <h1 class="display-4 display-title anim-1">About</h1>
-                <h4 class="anim-2">Code to Create</h4>
-                <p class="anim-2">
-                  Creating is always something I've been doing. From legos and comics, to furnitures and computers, and now code. I graduated UCSD with an Economics degree and re-invented myself as a web developer.
-                  I've started learning UX/UI design and eventually became capitivated with coding. The ability to build from scratch, to read an encrypted language, and to develop a product with a team is incredibly rewarding.
-                  I'm looking forward to work on many future projects and collaborate with other passionate people. If you are to, please contact me and we'll chat.
+                <h4 class="anim-2">Made to Create</h4>
+                <p class="anim-2 about-description">
+                  Creating is always something I've been doing. From drawing comics, to building computers, and now developing websites. I graduated UCSD with an Economics degree and re-invented myself as a web developer.
+                  I learned UX/UI design and eventually became capitivated with coding during live prototyping. The ability to build from scratch and developing a product is incredibly rewarding.
+                  I'm currently looking to work in future projects and collaborate with other passionate people. Contact me and see if we're a good fit.
                 </p>
               </div>
 
@@ -263,11 +258,11 @@
                         <h3 class="title">Paul Su</h3>
                         <h4>Front-end Developer</h4>
                         <div class="icons">
-                          <a class="icon-btn" href="#">
-                            <i class="icon fa fa-instagram"></i>
+                          <a target="_blank" class="icon-btn" href="//linkedin.com/in/paulcysu">
+                            <i class="icon fa fa-linkedin"></i>
                           </a>
-                          <a class="icon-btn" href="#">
-                            <i class="icon fa fa-twitter"></i>
+                          <a target="_blank" class="icon-btn" href="//github.com/paulcysu">
+                            <i class="icon fa fa-github"></i>
                           </a>
                         </div>
                       </div>
@@ -277,17 +272,17 @@
                   <li class="slide-item swiper-slide">
                     <div class="item-wrapper">
                       <div class="illustr">
-                        <img src="img/chinese.jpg" alt="Image" class="img">
+                        <img src="img/art.jpg" alt="Image" class="img">
                       </div>
                       <div class="legend">
                         <h3 class="title">Paul Su</h3>
                         <h4>UX/UI Enthusiant</h4>
                         <div class="icons">
-                          <a class="icon-btn" href="#">
-                            <i class="icon fa fa-instagram"></i>
+                          <a target="_blank" class="icon-btn" href="//linkedin.com/in/paulcysu">
+                            <i class="icon fa fa-linkedin"></i>
                           </a>
-                          <a class="icon-btn" href="#">
-                            <i class="icon fa fa-twitter"></i>
+                          <a target="_blank" class="icon-btn" href="//github.com/paulcysu">
+                            <i class="icon fa fa-github"></i>
                           </a>
                         </div>
                       </div>
@@ -297,37 +292,37 @@
                   <li class="slide-item swiper-slide">
                     <div class="item-wrapper">
                       <div class="illustr">
-                        <img src="img/lake.jpg" alt="Image" class="img">
+                        <img src="img/books.jpg" alt="Image" class="img">
+                      </div>
+                      <div class="legend">
+                        <h3 class="title">Paul Su</h3>
+                        <h4>Reader</h4>
+                        <div class="icons">
+                          <a target="_blank" class="icon-btn" href="//linkedin.com/in/paulcysu">
+                            <i class="icon fa fa-linkedin"></i>
+                          </a>
+                          <a target="_blank" class="icon-btn" href="//github.com/paulcysu">
+                            <i class="icon fa fa-github"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <!-- item -->
+                  <li class="slide-item swiper-slide">
+                    <div class="item-wrapper">
+                      <div class="illustr">
+                        <img src="img/controller.jpg" alt="Image" class="img">
                       </div>
                       <div class="legend">
                         <h3 class="title">Paul Su</h3>
                         <h4>Gamer</h4>
                         <div class="icons">
-                          <a class="icon-btn" href="#">
-                            <i class="icon fa fa-instagram"></i>
+                          <a target="_blank" class="icon-btn" href="//linkedin.com/in/paulcysu">
+                            <i class="icon fa fa-linkedin"></i>
                           </a>
-                          <a class="icon-btn" href="#">
-                            <i class="icon fa fa-twitter"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <!-- item -->
-                  <li class="slide-item swiper-slide">
-                    <div class="item-wrapper">
-                      <div class="illustr">
-                        <img src="img/mountains.jpg" alt="Image" class="img">
-                      </div>
-                      <div class="legend">
-                        <h3 class="title">Paul Su</h3>
-                        <h4>Awesomener</h4>
-                        <div class="icons">
-                          <a class="icon-btn" href="#">
-                            <i class="icon fa fa-instagram"></i>
-                          </a>
-                          <a class="icon-btn" href="#">
-                            <i class="icon fa fa-twitter"></i>
+                          <a target="_blank" class="icon-btn" href="//github.com/paulcysu">
+                            <i class="icon fa fa-github"></i>
                           </a>
                         </div>
                       </div>
@@ -363,55 +358,21 @@
         <div class="slide-wrapper">
           <div class="item-wrapper">
             <div class="illustr">
-              <img class="img img-block" src="img/city.jpg" alt="Image">
+              <img class="img img-block" src="img/projects/stand_app_player.png" alt="Image">
             </div>
             <div class="legend">
-              <a href="item.html#project_url">
-                <h3>Memory Match</h3>
-                <h4>HTML, CSS, Javascript (OOP)</h4>
-                <p>Lorem ipsum magicum dolor sit amet, consectetur adipiscing elit.
-                  Maecenas a sem ultrices neque vehicula fermentum a sit amet nulla.</p>
-              </a>
-              <a class="btn btn-transp-arrow btn-primary" href="item.html#project_url">
-                <span class="text">Details</span>
-                <span class="icon arrow-right"></span>
-              </a>
-              <div class="icons">
-                <a class="icon-btn" href="#">
-                  <i class="icon fa fa-instagram"></i>
-                </a>
-                <a class="icon-btn" href="#">
-                  <i class="icon fa fa-twitter"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="slide">
-        <div class="slide-wrapper">
-          <div class="item-wrapper">
-            <div class="illustr">
-              <img class="img img-block" src="img/airplane.jpg" alt="Image">
-            </div>
-            <div class="legend">
-              <a href="item.html#project_url">
+              <a target="_blank" href="https://standapp.live">
                 <h3>Stand App</h3>
-                <h4>React, php, Node.js, mySQL</h4>
-                <p>Lorem ipsum magicum dolor sit amet, consectetur adipiscing elit.
-                  Maecenas a sem ultrices neque vehicula fermentum a sit amet nulla.</p>
+                <h4>HTML5, CSS3, Bootstrap 4, JS, ReactJS, ReduxJS, PHP, mySQL, S3, Cloudfront</h4>
+                <p>A comedy stand up appplication, where comedians and audio creators can record their performances and share their works with others.</p>
               </a>
-              <a class="btn btn-transp-arrow btn-primary" href="item.html#project_url">
-                <span class="text">Details</span>
+              <a class="btn btn-transp-arrow btn-primary" target="_blank" href="https://standapp.live/login">
+                <span class="text">Live Website</span>
                 <span class="icon arrow-right"></span>
               </a>
               <div class="icons">
-                <a class="icon-btn" href="#">
-                  <i class="icon fa fa-instagram"></i>
-                </a>
-                <a class="icon-btn" href="#">
-                  <i class="icon fa fa-twitter"></i>
+                <a class="icon-btn" target="_blank" href="https://github.com/Learning-Fuze/c618_standup">
+                  <i class="icon fa fa-github"></i>
                 </a>
               </div>
             </div>
@@ -423,25 +384,47 @@
         <div class="slide-wrapper">
           <div class="item-wrapper">
             <div class="illustr">
-              <img class="img img-block" src="img/bonfire.jpg" alt="Image">
+              <img class="img img-block" src="img/projects/steady_eats_wide.png" alt="Image">
             </div>
             <div class="legend">
-              <a href="item.html#project_url">
+              <a target="_blank" href="./projects/steady_eats/index.html">
                 <h3>Steady Eats</h3>
-                <h4>HTML, CSS, Javascript, Google APIs</h4>
-                <p>Lorem ipsum magicum dolor sit amet, consectetur adipiscing elit.
-                  Maecenas a sem ultrices neque vehicula fermentum a sit amet nulla.</p>
+                <h4>HTML5, CSS3, JS, Materialize CSS, Agile</h4>
+                <p>Food nutrition search engine with Yelp and Google Maps API integration</p>
               </a>
-              <a class="btn btn-transp-arrow btn-primary" href="item.html#project_url">
-                <span class="text">Details</span>
+              <a target="_blank" class="btn btn-transp-arrow btn-primary" href="./projects/steady_eats/index.html">
+                <span class="text">Live Website</span>
                 <span class="icon arrow-right"></span>
               </a>
               <div class="icons">
-                <a class="icon-btn" href="#">
-                  <i class="icon fa fa-instagram"></i>
+                <a target="_blank" class="icon-btn" href="https://github.com/paulcysu/c6.18_hackathon2">
+                  <i class="icon fa fa-github"></i>
                 </a>
-                <a class="icon-btn" href="#">
-                  <i class="icon fa fa-twitter"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="slide-wrapper">
+          <div class="item-wrapper">
+            <div class="illustr">
+              <img class="img img-block" src="img/projects/injustice.png" alt="Image">
+            </div>
+            <div class="legend">
+              <a target="_blank" href="./projects/injustice/index.html">
+                <h3>Injustice Battle</h3>
+                <h4>HTML5, CSS3, JS</h4>
+                <p>A two-player matching card game matched card to battle</p>
+              </a>
+              <a target="_blank" class="btn btn-transp-arrow btn-primary" href="./projects/injustice/index.html">
+                <span class="text">Live Website</span>
+                <span class="icon arrow-right"></span>
+              </a>
+              <div class="icons">
+                <a target="_blank" class="icon-btn" href="https://github.com/paulcysu/injustice_match_game">
+                  <i class="icon fa fa-github"></i>
                 </a>
               </div>
             </div>
@@ -473,10 +456,6 @@
               <!-- title and description -->
               <div class="title-desc">
                 <h2 class="display-4 display-title anim-1">Projects Overview</h2>
-                <p class="anim-2">List of our projects. Lorem ipsum magicum dolor sit amet, consectetur
-                  adipiscing elit. Maecenas a sem ultrices neque vehicula fermentum
-                  a sit amet nulla.
-                </p>
               </div>
             </div>
           </div>
@@ -486,18 +465,20 @@
             <!-- an item -->
             <div class="item media media-project">
               <div class="media-img">
-                <img class="" src="img/items/img-sample9-square.jpg" alt="An image">
+                <img class="" src="img/projects/stand_app_newsfeed.png" alt="An image">
               </div>
               <div class="media-body">
-                <a href="item.html#project_url">
-                  <h4>React, php, Node.js, App</h4>
+                <a target="_blank" href="https://standapp.live">
+                  <h4>HTML5, CSS3, Bootstrap 4, JS, ReactJS, ReduxJS, PHP, mySQL, S3, Cloudfront</h4>
                   <h3>Stand App</h3>
-                  <p class="price"></p>
                 </a>
               </div>
               <div class="media-footer">
-                <a class="btn btn-transp-arrow btn-primary" href="item.html">
-                  <span class="text">Details</span>
+                <a target="_blank" class="icon-btn" href="https://github.com/paulcysu/injustice_match_game">
+                  <i class="icon fa fa-github"></i>
+                </a>
+                <a target="_blank" class="btn btn-transp-arrow btn-primary" href="https://standapp.live">
+                  <span class="text">Live Website</span>
                   <span class="icon arrow-right"></span>
                 </a>
               </div>
@@ -505,37 +486,41 @@
             <!-- an item -->
             <div class="item media media-project">
               <div class="media-img">
-                <img class="" src="img/items/img-sample10-square.jpg" alt="An image">
+                <img class="" src="img/projects/steady_eats_info.png" alt="An image">
               </div>
               <div class="media-body">
-                <a href="item.html#project_url">
-                  <h4>Front-end Developer, Design, Game</h4>
-                  <h3>Memory Match</h3>
-                  <p class="price"></p>
-                </a>
-              </div>
-              <div class="media-footer">
-                <a class="btn btn-transp-arrow btn-primary" href="item.html">
-                  <span class="text">Details</span>
-                  <span class="icon arrow-right"></span>
-                </a>
-              </div>
-            </div>
-            <!-- an item -->
-            <div class="item media media-project">
-              <div class="media-img">
-                <img class="" src="img/items/img-sample11-square.jpg" alt="An image">
-              </div>
-              <div class="media-body">
-                <a href="item.html#project_url">
-                  <h4>HTML, Materialize CSS, Javascript</h4>
+                <a target="_blank" href="./projects/steady_eats/index.html">
+                  <h4>HTML5, CSS3, JS, Materialize CSS, Agile</h4>
                   <h3>Steady Eats</h3>
-                  <p class="price"></p>
                 </a>
               </div>
               <div class="media-footer">
-                <a class="btn btn-transp-arrow btn-primary" href="item.html">
-                  <span class="text">Details</span>
+                <a target="_blank" class="icon-btn" href="https://github.com/paulcysu/c6.18_hackathon2">
+                  <i class="icon fa fa-github"></i>
+                </a>
+                <a target="_blank" class="btn btn-transp-arrow btn-primary" href="./projects/steady_eats/index.html">
+                  <span class="text">Live Website</span>
+                  <span class="icon arrow-right"></span>
+                </a>
+              </div>
+            </div>
+            <!-- an item -->
+            <div class="item media media-project">
+              <div class="media-img">
+                <img class="" src="img/projects/injustice_mobile.png" alt="An image">
+              </div>
+              <div class="media-body">
+                <a target="_blank" href="./projects/injustice/index.html">
+                  <h4>HTML5, CSS3, Javascript</h4>
+                  <h3>Injustice Battle</h3>
+                </a>
+              </div>
+              <div class="media-footer">
+                <a target="_blank" class="icon-btn" href="https://github.com/paulcysu/injustice_match_game">
+                  <i class="icon fa fa-github"></i>
+                </a>
+                <a target="_blank" class="btn btn-transp-arrow btn-primary" href="./projects/injustice/index.html">
+                  <span class="text">Live Wesbite</span>
                   <span class="icon arrow-right"></span>
                 </a>
               </div>
@@ -561,7 +546,7 @@
     <!-- End of list projects section -->
 
     <!-- Begin of list feature section -->
-    <div class="section section-list-feature fp-auto-height-responsive " data-section="services">
+    <div class="section section-list-feature fp-auto-height-responsive " data-section="skills">
       <!-- section cover -->
       <div class="section-cover-full bg-img" data-image-src="./img/sections/services.png">
       </div>
@@ -586,7 +571,7 @@
             <!-- an item -->
             <div class="item media">
               <div class="img">
-                <i class="icon ion-code-working"></i>
+                <i class="devicon-html5-plain colored"></i>
               </div>
               <div class="media-body">
                 <h4>HTML5</h4>
@@ -595,7 +580,7 @@
             <!-- an item -->
             <div class="item media">
               <div class="img">
-                <i class="icon ion-ios-cog-outline"></i>
+                <i class="devicon-css3-plain colored"></i>
               </div>
               <div class="media-body">
                 <h4>CSS</h4>
@@ -604,7 +589,16 @@
             <!-- an item -->
             <div class="item media">
               <div class="img">
-                <i class="icon ion-ios-analytics-outline"></i>
+                <i class="devicon-javascript-plain colored"></i>
+              </div>
+              <div class="media-body">
+                <h4>Javascript</h4>
+              </div>
+            </div>
+            <!-- an item -->
+            <div class="item media">
+              <div class="img">
+                <i class="devicon-react-original colored"></i>
               </div>
               <div class="media-body">
                 <h4>React</h4>
@@ -613,50 +607,112 @@
             <!-- an item -->
             <div class="item media">
               <div class="img">
-                <i class="icon ion-ios-grid-view-outline"></i>
+                <i class="devicon-bootstrap-plain colored"></i>
               </div>
               <div class="media-body">
-                <h4>Design</h4>
+                <h4>Bootstrap</h4>
               </div>
             </div>
             <!-- an item -->
             <div class="item media">
               <div class="img">
-                <i class="icon ion-ios-albums-outline"></i>
+                <img src="img/icons/materialize.png">
               </div>
               <div class="media-body">
-                <h4>Painting</h4>
+                <h4>Materialize</h4>
               </div>
             </div>
             <!-- an item -->
             <div class="item media">
               <div class="img">
-                <i class="icon ion-ios-camera-outline"></i>
+                <img src="img/icons/redux.png">
               </div>
               <div class="media-body">
-                <h4>Photogramhy</h4>
+                <h4>Redux</h4>
               </div>
             </div>
             <!-- an item -->
             <div class="item media">
               <div class="img">
-                <i class="icon ion-ios-cloud-outline"></i>
+                  <i class="devicon-amazonwebservices-original colored"></i>
               </div>
               <div class="media-body">
-                <h4>Hosting</h4>
+                <h4>AWS, EC-2, S3, Cloudfront</h4>
               </div>
             </div>
             <!-- an item -->
             <div class="item media">
               <div class="img">
-                <i class="icon ion-ios-game-controller-a-outline"></i>
+                <i class="devicon-git-plain colored"></i>
               </div>
               <div class="media-body">
-                <h4>Entertainment</h4>
+                <h4>Git</h4>
               </div>
             </div>
+            <!-- an item -->
+            <div class="item media">
+              <div class="img">
+                  <i class="devicon-github-plain"></i>
+              </div>
+              <div class="media-body">
+                <h4>Github</h4>
+              </div>
+            </div>
+            <!-- an item -->
+            <div class="item media">
+              <div class="img">
+                <i class="devicon-jquery-plain colored"></i>
+              </div>
+              <div class="media-body">
+                <h4>jQuery</h4>
+              </div>
+            </div>
+            <!-- an item -->
+            <div class="item media">
+              <div class="img">
+                <i class="devicon-mysql-plain"></i>
+              </div>
+              <div class="media-body">
+                <h4>MySQL</h4>
+              </div>
+            </div>
+            <!-- an item -->
+            <div class="item media">
+              <div class="img">
+                  <img src="/img/icons/slack.png">
+              </div>
+              <div class="media-body">
+                <h4>Slack</h4>
+              </div>
+            </div>
+            <!-- an item -->
+            <div class="item media">
+              <div class="img">
+                <img src="/img/icons/php.png">
+              </div>
+              <div class="media-body">
+                <h4>PHP</h4>
+              </div>
+            </div>
+            <!-- an item -->
+            <div class="item media">
+              <div class="img">
+                <img src="/img/icons/ajax.png">
+              </div>
+              <div class="media-body">
+                <h4>AJAX</h4>
+              </div>
+            </div>
+            <!-- an item
+            <div class="item media">
+              <div class="img">
+                  <i class="devicon-mysql-plain"></i>
+              </div>
+              <div class="media-body">
+                <h4>MySQL</h4>
+              </div>
+            </div> -->
           </div>
-
         </div>
 
         <!-- Arrows scroll down/up -->
@@ -688,8 +744,8 @@
               <div class="title-desc">
                 <div class="anim-2">
                   <h2 class="display-4 display-title">Contact</h2>
-                  <p>I am currently seeking project and work opportunities.
-                    <br>Contact me if your interested in working together.</br>
+                  <p>I am currently seeking work and project opportunities.
+                    <br>Contact me if you're interested in working together.</br>
                   </p>
                 </div>
                 <div class="address-container anim-3">
@@ -698,14 +754,14 @@
                     <div class="col-12 col-md-6 col-lg-6">
                       <h4>Contact</h4>
                       <p>Call: (213) 344-8476</p>
-                      <p>Email: su.paul.cy@gmail.com</p>
+                      <p>Email: <a href="mailto:su.paul.cy@gmail.com">su.paul.cy@gmail.com</a></p>
 
                       <div class="icons icons-margin">
-                        <a class="icon-btn" href="#">
-                          <i class="icon fa fa-instagram"></i>
+                        <a target="_blank" class="icon-btn" href="//linkedin.com/in/paulcysu">
+                          <i class="icon fa fa-linkedin"></i>
                         </a>
-                        <a class="icon-btn" href="#">
-                          <i class="icon fa fa-twitter"></i>
+                        <a target="_blank" class="icon-btn" href="//github.com/paulcysu">
+                          <i class="icon fa fa-github"></i>
                         </a>
                       </div>
                     </div>
@@ -776,18 +832,13 @@
       </p>
       <ul class="social">
         <li>
-          <a href="//linkedin.com/in/paulcysu">
+          <a target="_blank" href="//linkedin.com/in/paulcysu">
             <i class="icon fa fa-linkedin"></i>
           </a>
         </li>
         <li>
-          <a href="//github.com/paulcysu">
+          <a target="_blank" href="//github.com/paulcysu">
             <i class="icon fa fa-github"></i>
-          </a>
-        </li>
-        <li>
-          <a href="//twitter.com/paulsudesign">
-            <i class="icon fa fa-twitter"></i>
           </a>
         </li>
       </ul>
