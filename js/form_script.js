@@ -66,7 +66,7 @@
 							//ajax error
 							settings.textFeedback.removeClass('gone');
 							settings.textFeedback.removeClass('invisible');
-							settings.textFeedback.html('Error when sending requestasdfasdf.');
+							settings.textFeedback.html('Error when sending.');
 							console.log('ajax error');
 						}
 						/* END EMAIL SENDING CALLBACK */
