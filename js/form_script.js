@@ -39,7 +39,7 @@
 						type: settings.type,
 						// type: 'GET',
 						data: form_data,
-						dataType: 'json',
+						// dataType: 'json',
 						/* CALLBACK FOR SENDING EMAIL GOEAS HERE */
 						success: function (data) {
 							//Ajax connexion was a success, now handle response
@@ -66,7 +66,7 @@
 							//ajax error
 							settings.textFeedback.removeClass('gone');
 							settings.textFeedback.removeClass('invisible');
-							settings.textFeedback.html('Error when sending request.');
+							settings.textFeedback.html('Error when sending requestasdfasdf.');
 							console.log('ajax error');
 						}
 						/* END EMAIL SENDING CALLBACK */
