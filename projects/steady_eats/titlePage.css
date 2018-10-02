@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Aleo;
+    src: url(/font/Aleo-Regular.otf);
+}
+
+body {
+    background-color: white;
+}
+
+#logo {
+    margin-top: 7%;
+}
+
+#logoImage {
+    position: relative;
+    margin: auto;
+    transform: rotate(-3deg)
+}
+
+#nameImage{
+    height: 120px;
+}
+
+#name {
+    font-size: 4rem;
+    font-family: Aleo, sans-serif;
+    color: green;
+}
+
+#search {
+    width: 60% !important;
+}
+
+.formSection {
+    width: 50%;
+    margin: auto;
+    position: relative;
+}
+
+#loadingText {
+    font-size: 1.6em;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+@media only screen and (max-width: 800px) {
+    .container {
+        padding-top: 15%;
+    }
+    .formSection {
+        width: 100%;
+        margin: auto;
+    }
+}

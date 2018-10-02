@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="loading.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="loading.js"></script>
+</head>
+<body>
+
+<div class="loader">
+    <div class="logo">
+        <p>in-justice</span></p>
+    </div>
+    <div class="loader-frame">
+        <div class="loader1" id="loader1"></div>
+        <div class="loader2" id="loader2"></div>
+    </div>
+</div>
+    
+<div class="container">
+
+    <div class="header">
+        <img src="img/injustice.png">
+        <div class="navbar">
+            <div class="rules">Rules</div>
+            <div class="reset">Reset</div>
+        </div>
+    </div>
+
+    <div class="flex-container">
+        <div class="player left">
+            <div class="avatar highlight">
+                <img src="img/batman.png">
+            </div>
+            <div class="health">
+                <div class='green'></div>
+                <div class='green'></div>
+                <div class='green'></div>
+            </div>
+            <div class="team">
+                <div><img class="empty" src=""></div>
+                <div><img class="empty" src=""></div>
+                <div><img class="empty" src=""></div>
+                <div><img class="empty" src=""></div>
+                <div><img class="empty" src=""></div>
+            </div>
+        </div>
+    
+        <div id="card_area">
+        </div>
+    
+        <div class="player right">
+            <div class="avatar">
+                <img src="img/superman.png">
+            </div>
+            <div class="health">
+                <div class='green'></div>
+                <div class='green'></div>
+                <div class='green'></div>
+            </div>
+            <div class="team">
+                <div><img class="empty" src=""></div>
+                <div><img class="empty" src=""></div>
+                <div><img class="empty" src=""></div>
+                <div><img class="empty" src=""></div>
+                <div><img class="empty" src=""></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="about_modal" class="modal shadow">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="about_modal_text">
+                <img class="about_image" src='img/injustice.png'>
+                <h3>About</h3>
+                <p>This is a two player game where players takes turn matching cards to recruit characters to battle after player two matches.</p>
+                <ul>
+                    <li>The player who takes opponent's health to zero wins.</li>
+                    <li>Player's turn ends until player has made a match.</li>
+                    <li>The battle between characters are determined by the programmer.</li>
+                    <li>Enjoy and have fun!</li>
+                </ul>
+                <button id="play">Play</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="win_modal" class="modal shadow">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal_text">Thank you for playing!
+                <p class="winner_text"></p>
+            </div>
+            <img class="modal_image" src="img/thank_you.jpeg">
+        </div>
+    </div>
+ 
+</div>
+</body>
+</html>

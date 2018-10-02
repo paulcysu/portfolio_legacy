@@ -1840,7 +1840,8 @@ textarea {
     .media-project .media-body h3 {
       font-size: 1.5rem;
       font-weight: bold;
-      margin: 0; }
+      margin: 0;
+      padding-top: 5%; }
     .media-project .media-body .price {
       font-weight: bold;
       font-size: 1rem;
@@ -2229,6 +2230,10 @@ textarea {
       .carousel-swiper-beta .slider-container .legend h3 {
         font-size: 1.5rem;
         font-weight: bold; }
+      .legend h3 {
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+      }
         @media (min-width: 960px) {
           .carousel-swiper-beta .slider-container .legend h3 {
             font-size: 2rem; } }
@@ -2557,6 +2562,11 @@ textarea {
   @media (min-width: 768px) {
     .page-header-alpha.topmenu-center.menu-right .navbar-topmenu .navbar-nav-actions {
       right: 120px; } }
+  @media (max-width: 768px) {
+    .navbar-topmenu .navbar-nav-actions {
+      display: none;
+    }
+  }
   .page-header-alpha .navbar-toggler {
     position: fixed;
     top: 8px;
@@ -2959,7 +2969,6 @@ textarea {
     background: rgba(29, 29, 29, 0.5); }
   .media h4 {
       font-size: 1.7rem;
-      padding-left: 5%;
       padding-top: 3%;
   }
 }
@@ -2967,7 +2976,6 @@ textarea {
 @media (max-width: 768px) {
   .media h4 {
     font-size: 2rem;
-    padding-left: 5%;
     padding-top: 3%;
   }
 }
@@ -3179,7 +3187,7 @@ textarea {
     width: 100%;
     height: 100%;
     /*  Page cover background image,color */
-    background: url(../img/bg-default.jpg);
+    /* background: url(../img/bg-default.jpg); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -4607,6 +4615,10 @@ textarea {
   .service-list .img {
     font-size: 4.5rem;
   }
+
+.media .img {
+  font-size: 4.5rem;
+}
 
 .project-list {
   display: -webkit-box;

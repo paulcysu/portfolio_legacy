@@ -27,6 +27,14 @@ $(document).on('ready', function () {
 		}
 	}
 
+	var number = 'Call: (213) 344' + '-8476'
+	var numberDOM = document.querySelector('#number');
+	numberDOM.innerHTML = number;
+
+	var mail = 'su.paul.cy' + '@gmail.com';
+	var mailDOM = document.querySelector('#mail');
+	mailDOM.innerHTML = mail;
+
 	// 1. Background image as data attribut 
 	var list = $('.bg-img');
 	for (var i = 0; i < list.length; i++) {
@@ -349,7 +357,6 @@ $(document).on('ready', function () {
 					}
 				}
 			});
-
 		}
 
 		// Init galleryPage
