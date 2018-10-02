@@ -31,7 +31,7 @@ body {
 }
 
 button:hover,
-.back:hover {
+.back img:hover {
     cursor: pointer;
 }
 
@@ -117,11 +117,11 @@ img {
     }
 }
 
-@media only screen and (max-height: 724px) {
+/* @media only screen and (max-height: 724px) {
     .card img {
         max-width: 40%;
     }
-}
+} */
 
 .front, .back {
     position: absolute;
