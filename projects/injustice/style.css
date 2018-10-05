@@ -30,11 +30,6 @@ body {
     font-size: 1rem;
 }
 
-button:hover,
-.back img:hover {
-    cursor: pointer;
-}
-
 .rules,
 .reset {
     display: inline-block;
@@ -117,11 +112,11 @@ img {
     }
 }
 
-/* @media only screen and (max-height: 724px) {
+@media only screen and (max-height: 724px) {
     .card img {
         max-width: 40%;
     }
-} */
+}
 
 .front, .back {
     position: absolute;
@@ -255,11 +250,11 @@ img {
 }
 
 .modal_text {
-    font-size: 1.8rem;
+    font-size: 1.8em;
 }
 
 .about_modal_text {
-    font-size: 1.5rem;
+    font-size: 1.5em;
     padding-top: 14%;
     padding-bottom: 15%;
     width: 80%;
@@ -365,31 +360,6 @@ ul {
     }
     .card {
         width: 30%;
-        height: 0;
-    }
-    .animate {
-        top: 50%;
-    }
-    .modal-content {
-        width: 80%;
-        height: 70%;
-        font-size: 1.5rem;
-    }
-    .header {
-        height: 8vh;
-    }
-    .navbar {
-        font-size: 1.7rem;
-    }
-}
-
-@media (max-width: 800px) {
-    .player {
-        width: 30%;
-        padding-top: 0%;
-    }
-    .card {
-        width: 25%;
         height: 0;
     }
     .animate {
