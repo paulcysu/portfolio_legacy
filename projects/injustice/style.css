@@ -30,6 +30,11 @@ body {
     font-size: 1rem;
 }
 
+button:hover,
+.back img:hover {
+    cursor: pointer;
+}
+
 .rules,
 .reset {
     display: inline-block;
@@ -65,8 +70,6 @@ img {
 .right {
     float: right;
 }
-
-/* Card Area */
 
 .flex-container {
     display: flex;
@@ -118,12 +121,6 @@ img {
     }
 }
 
-@media only screen and (max-height: 724px) {
-    .card img {
-        max-width: 40%;
-    }
-}
-
 .front, .back {
     position: absolute;
     width: 100%;
@@ -132,10 +129,6 @@ img {
 
 .front {
     padding-top: 3%;
-}
-
-.back {
-    /* opacity: 0.5; */
 }
 
 .avatar {
@@ -183,14 +176,6 @@ img {
 
 .hidden .back {
     display: none;
-}
-
-/* .hidden {
-    display: none;
-} */
-
-.matched {
-
 }
 
 .animate {
@@ -366,6 +351,31 @@ ul {
     }
     .card {
         width: 30%;
+        height: 0;
+    }
+    .animate {
+        top: 50%;
+    }
+    .modal-content {
+        width: 80%;
+        height: 70%;
+        font-size: 1.5rem;
+    }
+    .header {
+        height: 8vh;
+    }
+    .navbar {
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .player {
+        width: 30%;
+        padding-top: 0%;
+    }
+    .card {
+        width: 25%;
         height: 0;
     }
     .animate {

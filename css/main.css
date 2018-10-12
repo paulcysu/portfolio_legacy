@@ -5078,6 +5078,28 @@ textarea {
 @media (max-width: 767px) {
   .mb-sm-2 {
     margin-bottom: 8px !important; } }
+@media (max-width: 767px) {
+  .project-list .item {
+    width: 50%;
+  } 
+  .project-list h4 {
+    font-size: 0.8rem;
+  }
+  .project-list h3 {
+    font-size: 0.3rem;
+  }
+  .project-list a {
+    font-size: 0.8rem;
+  }
+  .service-list h4 {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 959px) {
+  .service-list h4 {
+    padding-left: 10px;
+  }
+}
 
 /*
  * Hide from both screenreaders and browsers: h5bp.com/u
@@ -5699,3 +5721,5 @@ p {
 /* ipad and tablet */
 /* ipad and tablet */
 /* phone */
+
+
