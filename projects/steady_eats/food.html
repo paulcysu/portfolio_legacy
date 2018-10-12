@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
     <link rel= "stylesheet" type="text/css" href="food.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
-    <!--added these three for modal to work-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script
             src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
@@ -38,7 +37,9 @@
         <div class="col m7 s12">
           <div id="foodName"></div>
           <div id="mapAndPic">
-            <div id="pic"></div>
+            <div id="pic">
+              <div class="loader"></div>
+            </div>
             <div id="map"></div>
           </div>
           <div id="question">
@@ -88,7 +89,7 @@
                     <div class="openOrClosed"></div>
                   </div>
                   <div class="yelpInfo">
-                    <div class="direction-title">Yelp Info when Location Clicked on Map</div>
+                    <div class="direction-title">Hungry? Try searching for a location.</div>
                     <div class="address"></div>
                     <div class="phone"></div>
                   </div>
