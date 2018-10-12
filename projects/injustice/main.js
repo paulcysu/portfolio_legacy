@@ -20,13 +20,7 @@ class Matching_Game {
         this.second_card_clicked = null;
         this.click_disabled = false;
         this.turn_index = false;
-        this.total_possible_matches = 4;
         this.match_counter = 0;
-        this.game_played = 0;
-        this.attempt = 0;
-        this.accuracy = 0;
-        this.player_1_health = 3;
-        this.player_2_health = 3;
         this.image_front_array = [
             "img/aquaman.png",
             "img/aquaman.png", 
@@ -101,7 +95,6 @@ class Matching_Game {
     }
 
     add_event_listener () {
-        // $("#card_area").on("click", ".flippable", this.card_clicked.bind(this));
         $(".back img").on("click", this.card_clicked.bind(this));
         $(".rules").on("click", function () {
             $("#about_modal").removeClass("shadow");
@@ -135,8 +128,6 @@ class Matching_Game {
                     var match_image = $(this.first_card_clicked).parent().parent().find(".card_front").attr("src");
                     this.first_card_clicked = null;
                     this.second_card_clicked = null;
-                    this.run_accuracy();
-                    this.display_stats();
                     var currentPlayerSide = '';
                     if(this.turn_index){
                         currentPlayerSide = 'right';
@@ -153,11 +144,11 @@ class Matching_Game {
                         this.matched_battle();
                         }
                     this.turn_index = !this.turn_index;
-                    if (this.player_1_health === 0) {
+                    if (player1.health === 0) {
                             $("#win_modal").removeClass("shadow");
                             $(".winner_text").text("Player 2 Wins!");
                             $(".back img").off();
-                    } else if (this.player_2_health === 0) {
+                    } else if (player2.health === 0) {
                             $("#win_modal").removeClass("shadow");
                             $(".winner_text").text("Player 1 Wins!");
                             $(".back img").off();
@@ -166,8 +157,6 @@ class Matching_Game {
                     }
                 } else {
                     this.click_disabled = true;
-                    this.run_accuracy();
-                    this.display_stats();
                     setTimeout(this.flip_back.bind(this), 1000);
                 }
             }
@@ -211,7 +200,7 @@ class Matching_Game {
             clone_image_left.fadeOut();
             clone_image_right.animate({right: "33%", top: "15%"});
             available_left_hand.css("opacity", 0.5);
-            this.player_1_health--;
+            player1.health--;
             var health_box = $(".left > .health > .green");
             var first_health_box = $(health_box[health_box.length - 1]);
             first_health_box.removeClass("green");
@@ -219,28 +208,11 @@ class Matching_Game {
             clone_image_right.fadeOut();
             clone_image_left.animate({left: "33%", top: "15%"});
             available_right_hand.css("opacity", 0.5);
-            this.player_2_health--;
+            player2.health--;
             var health_box = $(".right > .health > .green");
             var first_health_box = $(health_box[health_box.length - 1]);
             first_health_box.removeClass("green");
         }
-    }
-
-    display_stats () {
-        var game_played_append = $(".game_played .value").html(this.game_played);
-        var attempt_append = $(".attempt .value").html(this.attempt);
-        var accuracy_append = $(".accuracy .value").html(this.accuracy);
-    }
-
-    run_accuracy () {
-        this.accuracy = ((this.match_counter / this.attempt)*100).toFixed(2) + "%";
-    }
-
-    reset_stats () {
-        this.accuracy = 0;
-        this.match_counter = 0;
-        this.attempt = 0;
-        this.display_stats();
     }
 
     reset_button () {
@@ -248,8 +220,6 @@ class Matching_Game {
         this.player_1_health = 3;
         this.player_2_health = 3;
         this.turn_index = false;
-        this.reset_stats();
-        this.display_stats();
         $("#card_area").empty();
         this.image_front_array = [
             "img/aquaman.png",
@@ -290,7 +260,6 @@ class Matching_Game {
 
 class Player {
     constructor () {
-        this.image = "img/empty_card.png";
         this.health = 3;
     }
     lose_battle () {
