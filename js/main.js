@@ -27,9 +27,15 @@ $(document).on('ready', function () {
 		}
 	}
 
-	var number = 'Call: (213) 344' + '-8476'
+	var phone = '213' + '344' + '8476';
+	var number = '(213) 344' + '-8476'
 	var numberDOM = document.querySelector('#number');
-	numberDOM.innerHTML = number;
+	var phoneLink = document.createElement('a');
+	var phoneText = document.createTextNode(number);
+	phoneLink.setAttribute('href', "tel" + ":" + phone);
+	phoneLink.appendChild(phoneText);
+	numberDOM.appendChild(phoneLink);
+	// numberDOM.innerHTML = number;
 
 	var mail = 'su.paul.cy' + '@gmail.com';
 	var mailDOM = document.querySelector('#mail');
