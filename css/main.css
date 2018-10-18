@@ -5722,4 +5722,10 @@ p {
 /* ipad and tablet */
 /* phone */
 
+.media-body h4 {
+  width: 80%
+}
 
+.nav-item .btn {
+  background-color: black;
+}
