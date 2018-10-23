@@ -3955,7 +3955,10 @@ textarea {
   margin-bottom: 64px; }
 
 .section-content .title-desc {
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem; 
+  text-shadow: 2px 2px black; }
+.title-desc h1, .title-desc h4, .title-desc h2 {
+    text-shadow: 2px 2px black; }
   @media (min-width: 768px) {
     .section-content .title-desc {
       margin-bottom: 1rem; } }
@@ -4468,12 +4471,22 @@ textarea {
 
 .section .section-aside .message-form {
   width: 100%; }
+.message-form h4 {
+  text-shadow: 2px 2px black; }
   @media (min-width: 960px) {
     .section .section-aside .message-form {
       width: 320px; } }
   .section .section-aside .message-form h4 {
     font-size: 1rem;
     font-weight: bold; }
+  
+  input::placeholder, textarea::placeholder {
+      color:white !important;
+      text-shadow: 2px 2px black;
+  }
+  input {
+    text-shadow: 2px 2px black;
+  }
 
 @media (min-width: 768px) {
   .section .section-aside.aside-top {
