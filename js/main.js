@@ -476,20 +476,36 @@ $(document).on('ready', function () {
 		}
 	}
 
-	var form = document.getElementById('message_form');
-	form.onsubmit = validateForm;
-	
-	function validateForm () {
+	// var form = document.getElementById('message_form');
+	// form.onsubmit = validateForm;
+
+	// function validateForm () {
+	// 	var nameDOM = $('#mes-name');
+	// 	if (nameDOM.val() === ' ') {
+	// 		$('#mes-name-error').val('Please enter your name');
+	// 		console.log('name rorrr: ', $('#mes-name-error'));
+	// 	}
+	// 	if (document.getElementById('mes-name-error')) {
+	// 		var nameValue = document.getElementById('mes-name').value;
+	// 		var nameError = document.getElementById('mes-name-error');
+	// 		console.log('name value: ', nameValue);
+	// 	}
+	// }
+
+	var elements = document.getElementsByTagName("input");
+	for (var i = 0; i < elements.length; i++) {
 		var nameDOM = $('#mes-name');
-		if (nameDOM.val() === ' ') {
-			$('#mes-name-error').val('Please enter your name');
-			console.log('name rorrr: ', $('#mes-name-error'));
-		}
-		if (document.getElementById('mes-name-error')) {
-			var nameValue = document.getElementById('mes-name').value;
-			var nameError = document.getElementById('mes-name-error');
-			console.log('name value: ', nameValue);
-		}
+		elements[i].oninvalid = function(e) {
+			e.target.setCustomValidity("");
+			if (!e.target.validity.valid) {
+				e.target.setCustomValidity("This field cannot be left blank");
+			} else if (nameDOM.val() === ' ') {
+				e.target.setCustomValidity("This field cannot be left blank");
+			}
+		};
+		elements[i].oninput = function(e) {
+			e.target.setCustomValidity("");
+		};
 	}
  
 });
