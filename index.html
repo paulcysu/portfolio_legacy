@@ -187,7 +187,7 @@
           </div>
           <!-- Action button -->
           <div class="btns-action anim-3 text-right">
-            <a class="btn btn-outline-white btn-round" href="#contact">
+            <a class="btn btn-round" href="#contact">
               Contact
             </a>
           </div>
@@ -785,16 +785,18 @@
               id="message_form">
                 <div class="form-group name">
                   <input id="mes-name" name="name" type="text" placeholder="Name" class="form-control form-control-outline thick form-success-clean"
-                  required>
+                  >
+                  <label id="mes-name-error" class="error" for="mes-name"></label>
                 </div>
                 <div class="form-group email">
-                  <input id="mes-email" type="email" placeholder="Email" name="email" class="form-control form-control-outline thick form-success-clean"
-                  required>
+                  <input id="mes-email" placeholder="Email" name="email" class="form-control form-control-outline thick form-success-clean"
+                  >
+                  <label id="mes-email-error" class="error" for="mes-email"></label>
                 </div>
                 <div class="form-group no-border">
                   <textarea id="mes-text" placeholder="Message ..." name="message" class="form-control form-control-outline thick form-success-clean"
-                  required></textarea>
-
+                  ></textarea>
+                  <label id="mes-text-error" class="error" for="mes-text"></label>
                   <div>
                     <p class="message-ok invisible form-text-feedback form-success-visible">Your message has been sent, thank you.</p>
                   </div>

@@ -77,35 +77,32 @@
 
 
 		//if jquery validator plugin is enable, use it	
-		if (jQuery.validator) {
-			jQuery.validator.setDefaults({
-				success: "valid"
-			});
-			this.validate({
-				rules: {
-					field: {
-						required: true,
-						email: true
-					}
-				}
-			});
-		}
-
-
+		// if (jQuery.validator) {
+		// 	jQuery.validator.setDefaults({
+		// 		success: "valid"
+		// 	});
+		// 	this.validate({
+		// 		rules: {
+		// 			field: {
+		// 				required: true,
+		// 				email: true
+		// 			}
+		// 		}
+		// 	});
+		// }
 
 		this.submit(function (event) {
 			// prevent default submit
-			console.log('Send request');
+			// console.log('Send request');
 			event.preventDefault();
 			// use jquery validator plugin if it is enabled
-			if (jQuery.validator) {
-				if ($(this).valid()) {
-					$ajax.sendRequest(this);
-				}
-			}
-			else {
+			// if (jQuery.validator) {
+			// if ($(this).valid()) {
+			// 	$ajax.sendRequest(this);
+			// }
+			// else {
 				$ajax.sendRequest(this);
-			}
+			// }
 		});
 
 	};
