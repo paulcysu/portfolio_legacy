@@ -5742,3 +5742,7 @@ p {
 .nav-item .btn {
   /* background-color: black; */
 }
+
+#form_loader {
+  display: none;
+}
