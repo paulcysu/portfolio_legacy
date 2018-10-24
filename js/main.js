@@ -586,10 +586,8 @@ $(document).on('ready', function () {
 
 		if (nameValid && emailValid && messageValid) {
 			document.getElementById("message_form").noValidate = false;
-			console.log(form);
 		} else {
 			document.getElementById("message_form").noValidate = true;
-			console.log(form);
 		}
 
 	}
