@@ -476,36 +476,120 @@ $(document).on('ready', function () {
 		}
 	}
 
-	// var form = document.getElementById('message_form');
-	// form.onsubmit = validateForm;
+	var form = document.getElementById('message_form');
+	form.onsubmit = validateForm;
 
-	// function validateForm () {
-	// 	var nameDOM = $('#mes-name');
-	// 	if (nameDOM.val() === ' ') {
-	// 		$('#mes-name-error').val('Please enter your name');
-	// 		console.log('name rorrr: ', $('#mes-name-error'));
-	// 	}
-	// 	if (document.getElementById('mes-name-error')) {
-	// 		var nameValue = document.getElementById('mes-name').value;
-	// 		var nameError = document.getElementById('mes-name-error');
-	// 		console.log('name value: ', nameValue);
-	// 	}
-	// }
+	let name = $('#mes-name');
+	let email = $('#mes-email');
+	let message = $('#mes-text');
+	let nameError = $('#mes-name-error');
+	let emailError = $('#mes-email-error');
+	let messageError = $('#mes-text-error');
+	let button = $('#submit-message');
+	let nameValid = false;
+	let emailValid = false;
+	let messageValid = false;
 
-	var elements = document.getElementsByTagName("input");
-	for (var i = 0; i < elements.length; i++) {
-		var nameDOM = $('#mes-name');
-		elements[i].oninvalid = function(e) {
-			e.target.setCustomValidity("");
-			if (!e.target.validity.valid) {
-				e.target.setCustomValidity("This field cannot be left blank");
-			} else if (nameDOM.val() === ' ') {
-				e.target.setCustomValidity("This field cannot be left blank");
-			}
+	name.change(checkName);
+	email.change(checkEmail);
+	message.change(checkMessage);
+
+	function checkName () {
+		if(name.val().trim().length !== 0) {
+			nameError.hide();
+			nameValid = true;
+		} else {
+			nameError.html("This field is required.");
+			nameError.show();
+			nameValid = false;
+		}
+		toggleSumbitButton();
+	}
+
+	function checkEmail () {
+		if(email.val().match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/)) {
+			emailError.hide();
+			emailValid = true;
+		} else if (email.val().trim().length > 0) {
+			emailError.html("Please input an email address");
+			emailError.show();
+			emailValid = false;
+		} else {
+			emailError.html("This field is required.");
+			emailError.show();
+			emailValid = false;
+		}
+		toggleSumbitButton();
+	}
+
+	function checkMessage () {
+		if (message.val().trim().length > 10) {
+			messageError.hide();
+			messageValid = true;
+		} else if(message.val().trim().length !== 0) {
+			messageError.html("Require more than 10 characters");
+			messageError.show();
+			messageValid = false;
+		} else {
+			messageError.html("This field is required.");
+			messageError.show();
+			messageValid = false;
+		}
+		toggleSumbitButton();
+	}
+
+	function toggleSumbitButton () {
+		if (nameValid && emailValid && messageValid) {
+			button.css('background-color', 'green');
+		} else {
+			button.css('background-color', 'transparent') 
 		};
-		elements[i].oninput = function(e) {
-			e.target.setCustomValidity("");
-		};
+	}
+
+	function validateForm () {
+
+		if(name.val().trim().length !== 0) {
+			nameError.hide();
+			nameValid = true;
+		} else {
+			nameError.html("This field is required.");
+			nameError.show();
+			nameValid = false;
+		}
+
+		if(email.val().match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/)) {
+			// if(email.val().trim().length !== 0) {
+			emailError.hide();
+			emailValid = true;
+		} else if (email.val().trim().length > 0) {
+			emailError.html("Please input an email address");
+			emailError.show();
+			emailValid = false;
+		} else {
+			emailError.html("This field is required.");
+			emailError.show();
+			emailValid = false;
+		}
+
+		if (message.val().trim().length > 10) {
+			messageError.hide();
+			messageValid = true;
+		} else if(message.val().trim().length !== 0) {
+			messageError.html("Require more than 10 characters");
+			messageError.show();
+			messageValid = false;
+		} else {
+			messageError.html("This field is required.");
+			messageError.show();
+			messageValid = false;
+		}
+
+		if (nameValid && emailValid && messageValid) {
+			return true;
+		} else {
+			return false;
+		}
+
 	}
  
 });
