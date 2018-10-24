@@ -91,18 +91,22 @@
 		// 	});
 		// }
 
+
+
 		this.submit(function (event) {
 			// prevent default submit
 			// console.log('Send request');
 			event.preventDefault();
 			// use jquery validator plugin if it is enabled
 			// if (jQuery.validator) {
-			// if ($(this).valid()) {
-			// 	$ajax.sendRequest(this);
+			// 	if ($(this).valid()) {
+			// 		$ajax.sendRequest(this);
+			// 	}
 			// }
 			// else {
+			if (document.getElementById("message_form").noValidate === false) {
 				$ajax.sendRequest(this);
-			// }
+			}
 		});
 
 	};
