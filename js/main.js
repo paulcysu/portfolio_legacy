@@ -486,9 +486,9 @@ $(document).on('ready', function () {
 	let emailError = $('#mes-email-error');
 	let messageError = $('#mes-text-error');
 	let button = $('#submit-message');
-	let nameValid = false;
-	let emailValid = false;
-	let messageValid = false;
+	var nameValid = false;
+	var emailValid = false;
+	var messageValid = false;
 
 	name.change(checkName);
 	email.change(checkEmail);
@@ -585,9 +585,11 @@ $(document).on('ready', function () {
 		}
 
 		if (nameValid && emailValid && messageValid) {
-			return true;
+			document.getElementById("message_form").noValidate = false;
+			console.log(form);
 		} else {
-			return false;
+			document.getElementById("message_form").noValidate = true;
+			console.log(form);
 		}
 
 	}
