@@ -91,7 +91,15 @@
 		// 	});
 		// }
 
+		$(document).ajaxStart(function () {
+			let button = $('#submit-message');
+			$('#form_loader').show();
+			button.css('background-color', 'transparent');
+		})
 
+		$(document).ajaxComplete(function () {
+			$('#form_loader').hide();
+		})
 
 		this.submit(function (event) {
 			// prevent default submit
