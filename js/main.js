@@ -476,5 +476,120 @@ $(document).on('ready', function () {
 		}
 	}
 
-});
+	var form = document.getElementById('message_form');
+	form.onsubmit = validateForm;
 
+	let name = $('#mes-name');
+	let email = $('#mes-email');
+	let message = $('#mes-text');
+	let nameError = $('#mes-name-error');
+	let emailError = $('#mes-email-error');
+	let messageError = $('#mes-text-error');
+	let button = $('#submit-message');
+	var nameValid = false;
+	var emailValid = false;
+	var messageValid = false;
+
+	name.change(checkName);
+	email.change(checkEmail);
+	message.change(checkMessage);
+
+	function checkName () {
+		if(name.val().trim().length !== 0) {
+			nameError.hide();
+			nameValid = true;
+		} else {
+			nameError.html("This field is required.");
+			nameError.show();
+			nameValid = false;
+		}
+		toggleSumbitButton();
+	}
+
+	function checkEmail () {
+		if(email.val().match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/)) {
+			emailError.hide();
+			emailValid = true;
+		} else if (email.val().trim().length > 0) {
+			emailError.html("Please input an email address");
+			emailError.show();
+			emailValid = false;
+		} else {
+			emailError.html("This field is required.");
+			emailError.show();
+			emailValid = false;
+		}
+		toggleSumbitButton();
+	}
+
+	function checkMessage () {
+		if (message.val().trim().length > 10) {
+			messageError.hide();
+			messageValid = true;
+		} else if(message.val().trim().length !== 0) {
+			messageError.html("Require more than 10 characters");
+			messageError.show();
+			messageValid = false;
+		} else {
+			messageError.html("This field is required.");
+			messageError.show();
+			messageValid = false;
+		}
+		toggleSumbitButton();
+	}
+
+	function toggleSumbitButton () {
+		if (nameValid && emailValid && messageValid) {
+			button.css('background-color', 'green');
+		} else {
+			button.css('background-color', 'transparent') 
+		};
+	}
+
+	function validateForm () {
+
+		if(name.val().trim().length !== 0) {
+			nameError.hide();
+			nameValid = true;
+		} else {
+			nameError.html("This field is required.");
+			nameError.show();
+			nameValid = false;
+		}
+
+		if(email.val().match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/)) {
+			// if(email.val().trim().length !== 0) {
+			emailError.hide();
+			emailValid = true;
+		} else if (email.val().trim().length > 0) {
+			emailError.html("Please input an email address");
+			emailError.show();
+			emailValid = false;
+		} else {
+			emailError.html("This field is required.");
+			emailError.show();
+			emailValid = false;
+		}
+
+		if (message.val().trim().length > 10) {
+			messageError.hide();
+			messageValid = true;
+		} else if(message.val().trim().length !== 0) {
+			messageError.html("Require more than 10 characters");
+			messageError.show();
+			messageValid = false;
+		} else {
+			messageError.html("This field is required.");
+			messageError.show();
+			messageValid = false;
+		}
+
+		if (nameValid && emailValid && messageValid) {
+			document.getElementById("message_form").noValidate = false;
+		} else {
+			document.getElementById("message_form").noValidate = true;
+		}
+
+	}
+ 
+});
