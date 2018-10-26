@@ -134,6 +134,7 @@ img {
 .avatar {
     margin-bottom: 5%;
     box-sizing: border-box;
+    border: 2px solid transparent;
 }
 
 .highlight {
@@ -208,12 +209,12 @@ img {
 }
 
 .modal {
-    position: fixed;
+    /* position: fixed; */
     z-index: 1;
     left: 0;
-    top: 0;
+    /* top: 0; */
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0,0.4);
 }
@@ -232,7 +233,7 @@ img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    overflow: auto;
+    /* overflow: auto; */
 }
 
 .modal_image {
@@ -290,7 +291,7 @@ ul {
     }
     .modal-content {
         width: 80%;
-        height: 60%;
+        /* height: 60%; */
         font-size: 0.5rem;
     }
     .modal_image {
@@ -325,7 +326,7 @@ ul {
 @media only screen and (max-height: 700px) {
     .modal-content {
         width: 80%;
-        height: 70%;
+        /* height: 70%; */
         font-size: 0.7rem;
     }
     .about_modal_text {
@@ -336,7 +337,7 @@ ul {
 @media only screen and (max-height: 585px) {
     .modal-content {
         width: 80%;
-        height: 70%;
+        /* height: 70%; */
         font-size: 0.5rem;
     }
     .about_modal_text {
@@ -358,7 +359,7 @@ ul {
     }
     .modal-content {
         width: 80%;
-        height: 70%;
+        /* height: 70%; */
         font-size: 1.5rem;
     }
     .header {
@@ -383,7 +384,7 @@ ul {
     }
     .modal-content {
         width: 80%;
-        height: 70%;
+        /* height: 70%; */
         font-size: 1.5rem;
     }
 }
@@ -391,6 +392,14 @@ ul {
 @media (max-height: 750px) and (min-width: 1100px) {
     .card {
         width: 15%
+    }
+    #win_modal .modal-content {
+        width: 60%;
+        font-size: 1.5rem;
+    }
+    #about_modal .modal-content {
+        height: 80%;
+        overflow: scroll;
     }
 }
 
@@ -400,5 +409,11 @@ ul {
     }
     .player {
         width: 7%
+    }
+    #win_modal .modal-content {
+        width: 30%;
+    }
+    #about_modal .modal-content {
+        height: 60%;
     }
 }
