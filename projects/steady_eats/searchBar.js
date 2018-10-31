@@ -123,9 +123,10 @@ function retrieveInput () {
 
 function sumbitSearch () {
     event.preventDefault();
-    let input = $('#food').val().trim();
+    let input = $('#food').val();
     let label = $('label');
-    if (input > 0) {
+    if (input.trim().length > 0) {
+        console.log('input: ', input)
         changePage();
         return true;
     } else {
