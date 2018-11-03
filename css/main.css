@@ -1225,8 +1225,8 @@ textarea {
     width: 50%;
     padding-right: 8px; }
   .grid-lg-3 .item {
-    width: 33.33333%;
-    padding-right: 8px; }
+    width: 45%;
+    padding-right: 8px;}
   .grid-lg-4 .item {
     width: 25%;
     padding-right: 8px; }
@@ -2968,17 +2968,32 @@ textarea {
   .page-header-alpha .navbar-mainmenu {
     background: rgba(29, 29, 29, 0.5); }
   .media h4 {
-      font-size: 1.7rem;
+      font-size: 1.6rem;
       padding-top: 3%;
   }
 }
 
-@media (max-width: 768px) {
-  .media h4 {
-    font-size: 2rem;
+@media (max-width: 700px) {
+  .project-list .media h4 {
+    font-size: 1.3rem;
     padding-top: 3%;
   }
+  .project-list .media h3,
+  .project-list .media h4 {
+    text-shadow: 3px 3px 10px black;
+  }
 }
+
+@media (min-width: 1100px) {
+    .project-list .media h4 {
+    font-size: 1.6rem;
+  }
+  .project-list .media h3,
+  .project-list .media h4 {
+    text-shadow: 3px 3px 10px black;
+  }
+}
+
 
 .menu-icon {
   height: 40px;
@@ -3494,7 +3509,7 @@ textarea {
   width: 100%;
   top: 0;
   height: 100%;
-  background-size: contain !important;
+  background-size: cover !important;
   background-position: center; }
   @media (min-width: 768px) {
     .section-cover-full {
@@ -4648,7 +4663,9 @@ textarea {
   .project-list .item {
     margin-bottom: 0;
     padding: 8px !important; }
-
+.project-list .media-img {
+  margin: auto;
+}
 .fp-slides {
   width: 100%; }
 
