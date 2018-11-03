@@ -105,7 +105,7 @@ function initAutocomplete() {
 
     //this is gives us the current location
     if (navigator.geolocation) {
-        debugger;
+        // debugger;
         navigator.geolocation.getCurrentPosition(function(position) {
             const pos = {
                 lat: position.coords.latitude,
@@ -232,7 +232,7 @@ function displayRoute(origin, destination) {
         map: map,
         panel: document.getElementById('direction')
     });
-    console.log('origin', origin);
+    // console.log('origin', origin);
     service.route({
         origin: origin,
         // origin: 
