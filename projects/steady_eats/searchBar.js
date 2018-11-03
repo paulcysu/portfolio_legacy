@@ -126,7 +126,6 @@ function sumbitSearch () {
     let input = $('#food').val();
     let label = $('label');
     if (input.trim().length > 0) {
-        console.log('input: ', input)
         changePage();
         return true;
     } else {
