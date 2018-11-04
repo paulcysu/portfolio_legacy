@@ -22,8 +22,19 @@ function requestYelpData (name, address, city) {
         method: "POST",
         dataType: "json",
         success: function (response) {
-            let businessId= response.businesses[0].id;
-            getYelpDetails(businessId);
+            if (response.businesses[0]) {
+                let businessId= response.businesses[0].id;
+                getYelpDetails(businessId);
+            } else {
+                $(".name").text('');
+                $('.phone').text('');
+                $('.reviews').text('');
+                $('.type').text('');
+                $('.address').text('');
+                $('.openOrClosed').text("")
+                $('#yelpImage').attr("src", './img/turtle_sad.png');
+                $('.direction-title').text("No Yelp Reviews for this location").css({color: "darkorange"});
+            }
         },
         error: function (error) {
             console.log("error from requestYelpData: ", error);
