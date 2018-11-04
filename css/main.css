@@ -2977,9 +2977,15 @@ textarea {
 }
 }
 
+@media (max-width: 300px) {
+  .project-list .media h4 {
+    font-size: 1rem;
+  }
+}
+
 @media (max-width: 700px) {
   .project-list .media h4 {
-    font-size: 1.3rem;
+    font-size: 1rem;
     padding-top: 3%;
   }
   .project-list .media h3,
