@@ -5774,3 +5774,12 @@ p {
 .label-input {
   text-shadow: 3px 3px 5px black
 }
+
+#number a, #mail {
+  color: white;
+  text-decoration: underline;
+}
+
+#number a:hover, #mail:hover {
+  color: rgb(201, 199, 199);
+}
