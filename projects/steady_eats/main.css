@@ -2,13 +2,9 @@
     box-sizing: border-box;
 }
 
-@font-face {
-    font-family: Aleo;
-    src: url(/font/Aleo-Regular.otf);
-}
-
 body {
     background-color: white;
+    font-family: "Open Sans", sans-serif;
 }
 
 #logo {
@@ -27,7 +23,7 @@ body {
 
 #name {
     font-size: 4rem;
-    font-family: Aleo, sans-serif;
+    font-family: "Open Sans", sans-serif;
     color: green;
 }
 
