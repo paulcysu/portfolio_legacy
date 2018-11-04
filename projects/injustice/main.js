@@ -277,7 +277,7 @@ class Matching_Game {
         $(".back").addClass("empty filled");
         game.add_event_listener();
         $(".player .avatar").removeClass("highlight");
-        $(".player .left .avatar").addClass("highlight");
+        $(".left .avatar").addClass("highlight");
     }
 }
 
