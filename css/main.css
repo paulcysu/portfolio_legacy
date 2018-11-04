@@ -2970,6 +2970,7 @@ textarea {
   .media h4 {
       font-size: 1.6rem;
       padding-top: 3%;
+      text-shadow: 3px 3px 10px black;
   }
 }
 
