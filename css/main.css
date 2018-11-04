@@ -2972,6 +2972,9 @@ textarea {
       padding-top: 3%;
       text-shadow: 3px 3px 10px black;
   }
+  .media h3 {
+    text-shadow: 3px 3px 10px black;
+}
 }
 
 @media (max-width: 700px) {
