@@ -7,7 +7,7 @@
   <meta name="description" content="Paul Su || Frontend Web Developer Portfolio">
 
   <!-- Disable screen scaling-->
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
 
   <!-- Web fonts and Web Icons -->
   <link rel="stylesheet" href="./fonts/opensans/stylesheet.css">
@@ -23,7 +23,7 @@
   <link rel="stylesheet" href="./css/bootstrap.min.css">
   <link rel="stylesheet" href="./js/vendor/swiper.min.css">
   <link rel="stylesheet" href="./js/vendor/jquery.fullpage.min.css">
-  <link rel="stylesheet" href="./js/vegas/vegas.min.css">
+  <!-- <link rel="stylesheet" href="./js/vegas/vegas.min.css"> -->
 
   <!-- Main CSS files -->
   <link rel="stylesheet" href="./css/main.css">
@@ -48,7 +48,7 @@
   <header class="page-header navbar page-header-alpha scrolled-white menu-right topmenu-right">
 
     <!-- Begin of menu icon toggler -->
-    <button class="navbar-toggler site-menu-icon" id="navMenuIcon">
+    <button class="navbar-toggler site-menu-icon" id="navMenuIcon" aria-label="menu button">
       <!-- Available class : menu-icon-dot / menu-icon-thick /menu-icon-random -->
       <span class="menu-icon menu-icon-normal">
         <span class="bars">
@@ -75,27 +75,27 @@
         <!-- Begin of CTA Actions, & Icons menu -->
         <ul class="navbar-nav navbar-nav-actions">
           <li class="nav-item">
-              <a class="btn btn-round" href="/#about">
+              <a class="btn btn-round" href="/#about" aria-label="about button">
                 About
               </a>
           </li>
           <li class="nav-item">
-            <a class="btn btn-round" href="/#projects">
+            <a class="btn btn-round" href="/#projects" aria-label="projects button">
               Projects
             </a>
           </li>
           <li class="nav-item">
-            <a class="btn btn-round" href="/#skills">
+            <a class="btn btn-round" href="/#skills" aria-label="skills button">
               Skills
             </a>
           </li>
           <li class="nav-item">
-            <a class="btn btn-round" target="_blank" href="https://drive.google.com/file/d/1xRL7R1tMFy36yn5VO9mNOLJP_QUFzOr6/view?usp=sharing">
+            <a class="btn btn-round" target="_blank" aria-label="resume button" rel="noopener" href="https://drive.google.com/file/d/1xRL7R1tMFy36yn5VO9mNOLJP_QUFzOr6/view?usp=sharing">
               Resume
             </a>
           </li>
           <li class="nav-item">
-            <a class="btn btn-round" href="/#contact">
+            <a class="btn btn-round" href="/#contact" aria-label="contact button">
               Contact
             </a>
           </li>
@@ -116,7 +116,7 @@
             <a class="nav-link" href="/#projects">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" target="_blank" href="https://drive.google.com/file/d/1xRL7R1tMFy36yn5VO9mNOLJP_QUFzOr6/view?usp=sharing">Resume</a>
+            <a class="nav-link" target="_blank" rel="noopener" href="https://drive.google.com/file/d/1xRL7R1tMFy36yn5VO9mNOLJP_QUFzOr6/view?usp=sharing">Resume</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/#contact">Contact</a>
@@ -161,7 +161,7 @@
 
               <!-- Action button -->
               <div class="btns-action anim-3">
-                <a class="btn btn-circicon btn-primary" href="#about">
+                <a class="btn btn-circicon btn-primary" href="#about" aria-label="about">
                   <span class="icon">
                     <i class="ion ion-chevron-down"></i>
                   </span>
@@ -179,7 +179,7 @@
           </div>
           <!-- Action button -->
           <div class="btns-action anim-3 text-right">
-            <a class="btn btn-round" href="#contact">
+            <a class="btn btn-round" href="#contact" aria-label="contact">
               Contact
             </a>
           </div>
@@ -220,7 +220,7 @@
 
               <!-- Action button -->
               <div class="btns-action anim-3">
-                <a class="btn btn-circicon btn-primary" href="#projects">
+                <a class="btn btn-circicon btn-primary" href="#projects" aria-label="projects button">
                   <span class="icon">
                     <i class="ion ion-chevron-down"></i>
                   </span>
@@ -250,10 +250,10 @@
                         <h3 class="title">Paul Su</h3>
                         <h4>Front-end Developer</h4>
                         <div class="icons">
-                          <a target="_blank" class="icon-btn" href="//linkedin.com/in/paulcysu">
+                          <a target="_blank" class="icon-btn" rel="noopener" href="//linkedin.com/in/paulcysu" aria-label="linkedin button">
                             <i class="icon fa fa-linkedin"></i>
                           </a>
-                          <a target="_blank" class="icon-btn" href="//github.com/paulcysu">
+                          <a target="_blank" class="icon-btn" rel="noopener" href="//github.com/paulcysu" aria-label="github button">
                             <i class="icon fa fa-github"></i>
                           </a>
                         </div>
@@ -290,10 +290,10 @@
                         <h3 class="title">Paul Su</h3>
                         <h4>Reader</h4>
                         <div class="icons">
-                          <a target="_blank" class="icon-btn" href="//linkedin.com/in/paulcysu">
+                          <a target="_blank" class="icon-btn" rel="noopener" href="//linkedin.com/in/paulcysu" aria-label="linkedin">
                             <i class="icon fa fa-linkedin"></i>
                           </a>
-                          <a target="_blank" class="icon-btn" href="//github.com/paulcysu">
+                          <a target="_blank" class="icon-btn" rel="noopener" href="//github.com/paulcysu" aria-label="github button">
                             <i class="icon fa fa-github"></i>
                           </a>
                         </div>
@@ -395,10 +395,10 @@
                 <!-- </a> -->
               </div>
               <div class="media-footer">
-                <a target="_blank" class="icon-btn" href="https://github.com/paulcysu/spotify_mockup">
+                <a target="_blank" class="icon-btn" rel="noopener" href="https://github.com/paulcysu/spotify_mockup" aria-label="spotify github">
                   <i class="icon fa fa-github"></i>
                 </a>
-                <a target="_blank" class="btn btn-transp-arrow btn-primary" href="https://paul-su-spotify.site">
+                <a target="_blank" class="btn btn-transp-arrow btn-primary" rel="noopener" href="https://paul-su-spotify.site" aria-label="spotify live site">
                   <span class="text">Live Website</span>
                   <span class="icon arrow-right"></span>
                 </a>
@@ -416,10 +416,10 @@
                 <!-- </a> -->
               </div>
               <div class="media-footer">
-                <a target="_blank" class="icon-btn" href="https://github.com/paulcysu/steady_eats">
+                <a target="_blank" class="icon-btn" rel="noopener" href="https://github.com/paulcysu/steady_eats" aria-label="steady eats github">
                   <i class="icon fa fa-github"></i>
                 </a>
-                <a target="_blank" class="btn btn-transp-arrow btn-primary" href="./projects/steady_eats/index.html">
+                <a target="_blank" class="btn btn-transp-arrow btn-primary" href="./projects/steady_eats/index.html" aria-label="steady eats live website">
                   <span class="text">Live Website</span>
                   <span class="icon arrow-right"></span>
                 </a>
@@ -437,10 +437,10 @@
                 <!-- </a> -->
               </div>
               <div class="media-footer">
-                <a target="_blank" class="icon-btn" href="https://github.com/paulcysu/injustice_match_game">
+                <a target="_blank" class="icon-btn" rel="noopener" href="https://github.com/paulcysu/injustice_match_game" aria-label="injustice github">
                   <i class="icon fa fa-github"></i>
                 </a>
-                <a target="_blank" class="btn btn-transp-arrow btn-primary" href="./projects/injustice/index.html">
+                <a target="_blank" class="btn btn-transp-arrow btn-primary" href="./projects/injustice/index.html" aria-label="injustive live site">
                   <span class="text">Live Wesbite</span>
                   <span class="icon arrow-right"></span>
                 </a>
@@ -776,10 +776,10 @@
                       <p>Email: <a href="mailto:su.paul.cy@gmail.com" id='mail'></a></p>
 
                       <div class="icons icons-margin">
-                        <a target="_blank" class="icon-btn" href="//linkedin.com/in/paulcysu">
+                        <a target="_blank" class="icon-btn" rel="noopener" href="//linkedin.com/in/paulcysu" aria-label="linkedin">
                           <i class="icon fa fa-linkedin"></i>
                         </a>
-                        <a target="_blank" class="icon-btn" href="//github.com/paulcysu">
+                        <a target="_blank" class="icon-btn" rel="noopener" href="//github.com/paulcysu" aria-label="github">
                           <i class="icon fa fa-github"></i>
                         </a>
                       </div>
@@ -806,16 +806,19 @@
               <form class="send_message_form message form" method="post" action="ajaxserver/serverfile.php"
               id="message_form">
                 <div class="form-group name">
+                  <label id="mes-name-label" class="label-input" for="mes-name">Name</label>
                   <input id="mes-name" name="name" type="text" placeholder="Name" class="form-control form-control-outline thick form-success-clean"
                   >
                   <label id="mes-name-error" class="error" for="mes-name"></label>
                 </div>
                 <div class="form-group email">
+                  <label id="mes-email-label" class="label-input" for="mes-email">Email</label>
                   <input id="mes-email" placeholder="Email" name="email" class="form-control form-control-outline thick form-success-clean"
                   >
                   <label id="mes-email-error" class="error" for="mes-email"></label>
                 </div>
                 <div class="form-group no-border">
+                  <label id="mes-text-label" class="label-input" for="mes-text">Message</label>
                   <textarea id="mes-text" placeholder="Message ..." name="message" class="form-control form-control-outline thick form-success-clean"
                   ></textarea>
                   <label id="mes-text-error" class="error" for="mes-text"></label>
@@ -826,7 +829,7 @@
 
                 <div class="btns text-right">
                   <img id='form_loader' src='./img/circle_loader.svg' alt='loader'>
-                  <button id="submit-message" class="btn btn-outline-white btn-round btn-fullNot email_b"
+                  <button id="submit-message" class="btn btn-outline-white btn-round btn-fullNot email_b" aria-label="send contact"
                   name="submit_message">
                     <span class="txt">Send Now</span>
                     <span class="arrow-icon"></span>
@@ -856,12 +859,12 @@
       </p>
       <ul class="social">
         <li>
-          <a target="_blank" href="//linkedin.com/in/paulcysu">
+          <a target="_blank" rel="noopener" href="//linkedin.com/in/paulcysu">
             <i class="icon fa fa-linkedin"></i>
           </a>
         </li>
         <li>
-          <a target="_blank" href="//github.com/paulcysu">
+          <a target="_blank" rel="noopener" href="//github.com/paulcysu">
             <i class="icon fa fa-github"></i>
           </a>
         </li>
@@ -879,7 +882,6 @@
   <script src="./js/vendor/parallax.min.js"></script>
   <script src="./js/vendor/scrolloverflow.min.js"></script>
   <script src="./js/vendor/all.js"></script>
-  <script src="./js/particlejs/particles.min.js"></script>
 
   <!-- Countdown script -->
   <script src="./js/jquery.downCount.js"></script>
