@@ -5113,9 +5113,6 @@ textarea {
   .mb-sm-2 {
     margin-bottom: 8px !important; } }
 @media (max-width: 767px) {
-  .project-list .item {
-    width: 50%;
-  } 
   .project-list h4 {
     font-size: 0.8rem;
   }
