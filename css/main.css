@@ -1093,7 +1093,7 @@ textarea {
   .form-group label.error {
     position: absolute;
     font-family: "Open Sans", "Proxima Nova ", "Segoe UI", "Opensans", "Roboto", "Helvetica", -apple-system, system-ui, BlinkMacSystemFont, sans-serif;
-    color: #ffffff;
+    color: red;
     font-size: 12px;
     top: 4px;
     bottom: auto;
@@ -1101,7 +1101,8 @@ textarea {
     text-align: right;
     padding-right: 8px;
     width: auto;
-    z-index: -1; }
+    z-index: -1; 
+    text-shadow: 1px 1px black;}
 
 .form-group.mb-0 {
   margin-bottom: 0; }
@@ -5782,4 +5783,15 @@ p {
 
 #number a:hover, #mail:hover {
   color: rgb(201, 199, 199);
+}
+
+#submit-message {
+  text-shadow: 2px 2px black;
+}
+
+@media (max-width: 800px) {
+  .service-list .media {
+    text-align: center;
+    display: block;
+  }
 }
