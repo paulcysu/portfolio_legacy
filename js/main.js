@@ -465,7 +465,7 @@ $(document).on('ready', function () {
 	});
 
 	var i = 0;
-	var txt = '<Hi, I\'m a frontend developer!>'; /* The text */
+	var txt = 'Frontend Developer - Web & Mobile'; /* The text */
 	var speed = 50; /* The speed/duration of the effect in milliseconds */
 
 	function typeWriter() {
