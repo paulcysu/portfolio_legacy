@@ -1,6 +1,13 @@
 $(document).ready(initializeApp);
 
-let food = sessionStorage.getItem("setFood");
+let food = null;
+if (sessionStorage.getItem("setFood")) {
+    food = sessionStorage.getItem("setFood").toLowerCase();
+} else {
+    let url = window.location.href;
+    let split = url.split('search=');
+    food = split[1];
+}
 
 /**
  * Once DOM is ready, get nutrition from server and add animations

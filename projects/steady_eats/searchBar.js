@@ -108,7 +108,8 @@ function submitClicked () {
  */
 function changePage () {
     // nutritionCallFromServer($("#food").val());
-    location.assign("food.html")
+    let input = $('#food').val()
+    location.replace("food.html?search=" + input)
 }
 
 /**
