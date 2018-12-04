@@ -7,13 +7,6 @@ let origin = {lat: 33.6348676, lng: -117.7405317};
 $(document).ready(initializeApp);
 
 let foodName = null;
-if (sessionStorage.getItem("setFood")) {
-    foodName = sessionStorage.getItem("setFood").toLowerCase();
-} else {
-    let url = window.location.href;
-    let split = url.split('search=');
-    foodName = split[1];
-}
 let map;
 let previousInfoWindow = false;
 let previousRoute = false;
@@ -21,6 +14,13 @@ let previousRoute = false;
  * apply click handlers and put food name on display
  */
 function initializeApp() {
+    if (sessionStorage.getItem("setFood")) {
+        foodName = sessionStorage.getItem("setFood").toLowerCase();
+    } else {
+        let url = window.location.href;
+        let split = url.split('search=');
+        foodName = split[1];
+    }
   applyClickHandler();
   $("#foodName").text(foodName);
 }
@@ -90,7 +90,7 @@ function submitFormData () {
 function showMap(){
   $("#pic").hide();
   $("#map").show();
-  foodInput = sessionStorage.getItem("setFood");
+  foodInput = foodName;
   $("#pac-input").val(foodInput);
   setTimeout(submitFormData, 1000);
 }
